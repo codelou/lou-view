@@ -1,0 +1,8 @@
+{
+  "name": "visual-field",
+  "description": "",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "elemefe",
+  "dependencies": {}
+}

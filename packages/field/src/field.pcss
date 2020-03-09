@@ -1,0 +1,80 @@
+@import "../../theme/var/base.pcss";
+
+@component-namespace oxygen {
+  @component field {
+    display: flex;
+
+    @when textarea {
+      align-items: inherit;
+
+      .visual-cell-title {
+        padding: 10px 0;
+      }
+
+      .visual-cell-value {
+        padding: 5px 0;
+      }
+    }
+
+    .visual-cell-title {
+      width: 105px;
+      flex: none;
+    }
+
+    .visual-cell-value {
+      flex: 1;
+      color: inherit;
+      display: flex;
+    }
+
+    @descendent core {
+      appearance: none;
+      border-radius: 0;
+      border: 0;
+      flex: 1;
+      outline: 0;
+      line-height: 1.6;
+      font-size: inherit;
+      width: 100%;
+    }
+
+    @descendent clear {
+      opacity: .2;
+    }
+
+    @descendent state {
+      color: inherit;
+      margin-left: 20px;
+
+      .oxygenui {
+        font-size: 20px;
+      }
+
+      @when error {
+        color: var(--color-error);
+      }
+
+      @when warning {
+        color: var(--color-warning);
+      }
+
+      @when success {
+        color: var(--color-success);
+      }
+
+      @when default {
+        margin-left: 0;
+      }
+    }
+
+    @descendent other {
+      position: absolute 0 0 * *;
+    }
+
+    @when nolabel {
+      .visual-cell-title {
+        display: none;
+      }
+    }
+  }
+}

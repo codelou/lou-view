@@ -1,0 +1,17 @@
+{
+  "name": "visual-picker",
+  "description": "",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "keywords": [
+    "picker",
+    "multi slots",
+    "vue"
+  ],
+  "author": "long.zhang@ele.me",
+  "dependencies": {
+    "raf.js": "0.0.4",
+    "wind-dom": "0.0.3"
+  }
+}
